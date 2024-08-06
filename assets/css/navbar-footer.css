@@ -1,0 +1,64 @@
+nav{
+	background-color: #fff;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3), 0 0px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+nav .navbar-nav li{
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+nav .navbar-nav li a:hover{
+	color: #69942D;
+}
+
+@media only screen and (max-width: 375px){
+	nav .nav-logo img{
+		width: 15vw;
+	}
+    nav .nav-logo .nav-title h4{
+    	font-size: 6vw;
+    }
+    nav .nav-logo .nav-title p{
+    	font-size: 4vw;
+    }
+}
+
+footer .footer-container .footer-desc img{
+	width: 90px;
+}
+
+@media only screen and (max-width: 340px){
+	footer .footer-container .footer-desc img{
+		width: 60px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px){
+	footer .footer-container .footer-desc img{
+		width: 70px;
+	}
+
+	footer .footer-container .footer-desc .footer-title h4, 
+	footer .footer-container .footer-desc .footer-title p{
+		font-size: 1.9vw;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	footer .footer-container .footer-desc .footer-title h4, 
+	footer .footer-container .footer-desc .footer-title p{
+		font-size: 5vw;
+	}
+}
+
+footer .footer-container .footer-sitemap a, 
+footer .footer-container .footer-links a{
+	text-decoration: none;
+	color: #4682B4;
+}
+
+footer .footer-container .footer-sitemap a:hover, 
+footer .footer-container .footer-links a:hover{
+	color: #228b22;
+}

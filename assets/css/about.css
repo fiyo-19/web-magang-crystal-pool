@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'TT Commons';
+    src: url('../fonts/TT Commons Light.otf') format('opentype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    font-family: 'TT Commons';
+}
+
+.banner .banner-container{
+    height: 90vh;
+    overflow: hidden;
+    background-image: url(../../assets/img/img1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner-container .banner-desc{
+    left: 50px;
+    bottom: 30px;
+}
+
+.banner .banner-container .banner-desc h1{
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 425px){
+    .banner .banner-container{
+        height: 90vh;
+    }
+
+    .banner .banner-container .banner-desc h1{
+        font-size: 10vw;
+    }
+}
+
+.about .about-container{
+    height: 100vh;
+}
+
+@media only screen and (max-width: 425px){
+    .about .about-container{
+        height: 50vh;
+    }
+}
+
+.about .about-container p{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 425px){
+    .about .about-container p{
+        font-size: 3vw;
+    }
+}
+
+.services .services-container .services-box .services-list .services-desc{
+    background-color: #fff;
+    bottom: 150px;
+}
+
+@media only screen and (max-width: 425px){
+    .services .services-container .services-box .services-list .services-desc{
+        bottom: 150px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 992px){
+    .services .services-container .services-box .services-list .services-desc{
+        bottom: 180px;
+    }
+}
+
+@media only screen and (max-width: 574px){
+    .services .services-container .services-box .services-list img{
+        width: 90vw;
+    }
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #1746A2;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #1746A2;
+}

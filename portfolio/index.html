@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio | Crystal Pool Indonesia</title>
+	<link rel="icon" href="../assets/img/logo.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="../assets/css/portfolio.css">
+	<link rel="stylesheet" href="../assets/css/navbar-footer.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container-xxl">
+				<div class="nav-logo d-flex flex-row justify-content-center align-items-center">
+					<a class="navbar-brand" href="#"><img src="../assets/img/logo.png" alt=""></a>
+					<div class="nav-title d-flex flex-column justify-content-center align-items-start">
+						<h4 class="fw-bold m-0">Crystal Pool</h4>
+						<p class="m-0">Professional Pool Service</p>
+					</div>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item px-3">
+							<a class="nav-link" href="../">Home</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link active" aria-current="page" href="/">Portfolio</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link" href="../about">About</a>
+						</li>
+						<li class="nav-item px-3">
+							<a class="nav-link" href="../contact/">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	
+	<section class="banner container-xxl px-0">
+		<div class="banner-container d-flex justify-content-center align-items-center position-relative">
+			<div class="banner-desc d-flex align-items-start position-absolute text-light">
+				<h1 class="fw-semibold">Portfolio</h1>
+			</div>
+		</div>
+	</section>
+
+	<section class="gallery container-xxl mt-5">
+        <div class="gallery-row container-xl d-none d-md-flex flex-wrap justify-content-around align-items-center rounded-4 py-3 px-4 my-4 list-unstyled fw-bold fs-5" style="background-color: #1746A2;">
+            <li class="btn-list active" role="button" data-filter="*">All</li>
+            <li class="btn-list" role="button" data-filter=".rumah">Rumah</li>
+            <li class="btn-list" role="button" data-filter=".apartment">Apartment</li>
+            <li class="btn-list" role="button" data-filter=".waterpark">Waterpark</li>
+        </div>
+
+        <div class="gallery-select container-xl d-flex d-md-none justify-content-center align-items-center">
+            <select id="filterSelect">
+                <option value="*">All</option>
+                <option value=".rumah">Rumah</option>
+                <option value=".apartment">Apartment</option>
+                <option value=".waterpark">Waterpark</option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+		</div>
+
+        <div class="images-container container-xl">
+            <div class="images d-flex container-xl flex-wrap justify-content-center align-items-center p-0 my-4">
+                <div class=" my-2 px-md-2 images-list rumah">
+                    <img src="../assets/img/home.png" alt="">
+                </div> 
+
+                <div class=" my-2 px-md-2 images-list rumah">
+                    <img src="../assets/img/img1.png" alt="">
+                </div> 
+
+                <div class=" my-2 px-md-2 images-list apartment">
+                    <img src="../assets/img/apart.png" alt="">
+                 </div> 
+
+                 <div class=" my-2 px-md-2 images-list apartment">
+                    <img src="../assets/img/waterpark2.png" alt="">
+                 </div> 
+
+                 <div class=" my-2 px-md-2 images-list waterpark">
+                    <img src="../assets/img/img5.png" alt="">
+                 </div>
+
+                 <div class=" my-2 px-md-2 images-list waterpark">
+                    <img src="../assets/img/img6.png" alt="">
+                 </div>
+
+                 <div class=" my-2 px-md-2 images-list waterpark">
+                    <img src="../assets/img/img7.png" alt="">
+                 </div>
+
+            </div>
+        </div>
+    </section>
+
+	<section class="client container-xxl py-4">
+		<div class="client-container d-flex flex-column justify-content-center align-items-start">
+			<h3 class="fw-normal ms-4">Client Kami</h3>
+			<div class="swiper swiperClient">
+                    <div class="swiper-wrapper d-flex flex-row justify-content-around align-items-center py-5">
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part1.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part3.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part4.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part5.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part6.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part7.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part8.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part9.png" alt="">
+                        </div>
+                        <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
+                            <img class="" src="../assets/img/part10.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <script>
+            var swiper = new Swiper(".swiperClient", {
+                slidesPerView: 5,
+                spaceBetween: 0,
+                grabCursor: 'true',
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + " " + '</span>';
+                    },
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 4,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                    },
+                },
+            });
+    </script>
+    <script class="script-filter">
+        $(document).ready(function() {
+    		var $grid = $(".images").isotope({
+        	itemSelector: ".images-list",
+        	layoutMode: "fitRows",
+        	percentPosition: true,
+    	});
+
+	    $(".gallery-row li").click(function (){
+	        $(".gallery-row li").removeClass("active");
+	        $(this).addClass("active");
+
+	        var filterValue = $(this).attr("data-filter");
+
+	        $grid.isotope({ filter: filterValue });
+	    	});
+		});
+    </script>
+  	<script>
+   	 document.addEventListener('DOMContentLoaded', function() {
+        var $grid = document.querySelector('.images');
+        var iso = new Isotope($grid, {
+            itemSelector: '.images-list',
+            layoutMode: 'fitRows'
+        });
+
+        document.getElementById('filterSelect').addEventListener('change', function() {
+            var filterValue = this.value;
+            iso.arrange({ filter: filterValue });
+
+            iso.on('layoutComplete', function() {
+                console.log('Layout complete');
+            });
+        });
+   	 });
+	</script>
+
+ </body>
+<footer class="container-xxl mt-5">
+	<div class="footer-container container-xxl d-flex flex-column flex-md-row justify-content-center align-items-start">
+		<div class="footer-desc col-12 col-md-4 d-flex flex-wrap justify-content-center align-items-center gap-1">
+			<img class="col-4" src="../assets/img/logo.png" alt="">
+			<div class="footer-title col-8 d-flex flex-column justify-content-center align-items-start ms-1">
+				<h4 class="fw-semibold m-0">Crystal Pool</h4>
+				<p class="m-0">Profesional Pool Service</p>
+			</div>
+			<p class="col-12">Kami adalah kontraktor pembangunan kolam renang dan kolam ikan. Pengalaman bertahun-tahun dalam pembangunan kolam, membuat kami berani garansi struktur bangunan hingga 10 tahun.</p>
+		</div>
+		<div class="footer-sitemap col-12 col-md-4 d-flex flex-column justify-content-center align-items-start px-0 px-md-3 py-3 py-md-0 gap-2">
+			<h5 class="fw-bold">SITE MAP</h5>
+			<a href="../">Home</a>
+			<a href="/">Portofolio</a>
+			<a href="../about/">About</a>
+			<a href="../contact/">Contact</a>
+		</div>
+		<div class="footer-links col-12 col-md-4 d-flex flex-column justify-content-center align-items-start gap-2">
+			<h5 class="fw-bold">CONTACT INFO</h5>
+			<a href="mailto:marketing@crystalpool-indonesia.com" target="_blank"><i class="fa-regular fa-envelope text-dark"></i> : marketing@crystalpool-indonesia.com</a>
+			<a href="https://wa.me/62811375222" target="_blank"><i class="fa-brands fa-whatsapp text-dark"></i> : +62811375222</a>
+			<a href="https://web.facebook.com/crystalpoolindonesia" target="_blank"><i class="fa-brands fa-facebook text-dark"></i> : Crystal Pool</a>
+			<a href="https://www.instagram.com/crystal_pool_indonesia/" target="_blank"><i class="fa-brands fa-instagram text-dark"></i> : crystalpool_indonesia</a>
+			<a href="https://www.youtube.com/channel/UCR_KhKJ90211A5dwr0g91sg/featured" target="_blank"><i class="fa-brands fa-youtube text-dark"></i> : Crystal Pool Indonesia</a>
+		</div>
+	</div>
+		<div class="footer-copyright col-12 d-flex justify-content-center align-items-center text-center py-0 mt-1">
+			<p class="fw-semibold">Copyright 2022 - Crystal Pool Indonesia. All Rights Reserved.</p>
+		</div>
+</footer>
+</html>
